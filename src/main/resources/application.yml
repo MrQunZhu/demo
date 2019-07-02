@@ -1,0 +1,47 @@
+server:
+  port: 8899
+#spark:
+#  spark-home: .
+#  app-name: sparkTest
+#  master: local[4]
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+#  mqtt:
+#    username: admin
+#    password: password
+#    url: tcp://182.92.180.112:61613
+#    client:
+#      id: clientId
+#    server:
+#      id: serverId
+#    default:
+#      topic: topic
+#    completionTimeout: 3000
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    # 在考虑结束之前等待的时间
+    close-timeout: 15s
+    # 默认代理URL是否应该在内存中。如果指定了显式代理，则忽略此值。
+    in-memory: true
+    # 是否在回滚消息之前停止消息传递。这意味着当启用此命令时，消息顺序不会被保留。
+    non-blocking-redelivery: false
+    # 密码
+    password: 123456
+    # 等待消息发送响应的时间。设置为0等待永远。
+    send-timeout: 0s
+    user: haha
+#    packages:
+    # 是否信任所有包
+#      trust-all: true
+      # 要信任的特定包的逗号分隔列表（当不信任所有包时）
+#      trusted:
+
+
+
